@@ -14,7 +14,7 @@ dev.off()
 
 #qnorm
 a<-seq(1,2,by=0.02)
-qnorm(.95, mean=0, sd=1)
+qnorm(0.95, mean=0, sd=1)
 png(file="qnorm.png")
 plot(a,b)
 dev.off()
