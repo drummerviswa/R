@@ -5,7 +5,7 @@ while (num>1) {
   fact=fact*num
   num=num-1
 }
-print(paste("The factorial: ",fact))
+paste("The factorial: ",fact)
 
 #sort,min,max
 x<-c(15,48,3,852,14,655,4133)

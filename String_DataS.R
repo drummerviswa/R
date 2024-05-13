@@ -15,12 +15,13 @@ result<-gsub("G",letter,string)
 cat("New string: ",result)
 
 #To check a letter is present in a string or not
-a<-readline(prompt = "Enter a letter: ")
-char<-readline(prompt = "Enter a string: ")
+{a<-readline(prompt = "Enter a string: ")
+char<-readline(prompt = "Enter a letter: ")
 if(grepl(char,a)){
   print("Present")
 }else{
   print("Not")
+}
 }
 
 #To extract n char
@@ -33,7 +34,9 @@ print(extracted)
 
 
 #Create a employee dataset with field id,name,salary,dept
-emp<-data.frame(id=c(10,20,50,60),Name=c("v","i",'s','w'),salary=c(100,200,300,400),dept=c("cs","it",'ece','eee'))
+date=c("01/08/2005","01/09/2008","30/10/2004","27/06/2007")
+doj=as.Date(date,"%d/%m/%y")
+emp<-data.frame(id=c(10,20,50,60),Name=c("v","i",'s','w'),salary=c(100,200,300,400),dept=c("cs","it",'ece','eee'),doj)
 print(emp)
 
 #Concatenate 2 list
@@ -62,3 +65,6 @@ multiplication<-m1*m2
 print(multiplication)
 division<-m1/m2
 print(division)
+
+
+
